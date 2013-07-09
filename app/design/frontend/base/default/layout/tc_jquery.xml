@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author     TwinCreations Team <jason@twincreations.co.uk>
+ * @copyright  Copyright (c) 2013 TwinCreations <http://twincreations.co.uk/>
+ */
+-->
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs" ifconfig="tc_jquery/general/jqueryEnabled">
+                <script>tc_jquery/tc-jquery-loader.js</script>
+                <!-- <script>tc_jquery/jquery-1.10.1.min.js</script> -->
+            </action>
+            <action method="addJs" ifconfig="tc_jquery/general/lazyloadEnabled">
+                <script>tc_jquery/jquery.lazyload.min.js</script>
+            </action>
+            <action method="addItem" ifconfig="tc_jquery/general/lazyloadEnabled">
+                <type>skin_css</type>
+                <name>tc_jquery/css/lazyload/lazyload.css</name>
+            </action>
+        </reference>
+    </default>
+    
+    <catalog_category_layered>
+        <reference name="product_list">
+            <action method="setTemplate" ifconfig="tc_jquery/general/lazyloadEnabled">
+                <template>tc_jquery/catalog/product/lazyload-list.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_layered>
+</layout>

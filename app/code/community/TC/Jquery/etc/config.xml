@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author     TwinCreations Team <jason@twincreations.co.uk>
+ * @copyright  Copyright (c) 2013 TwinCreations <http://twincreations.co.uk/>
+ */
+-->
+<config>
+    <modules>
+        <TC_Jquery>
+            <version>0.1.0</version>
+        </TC_Jquery>
+    </modules>
+    <global>
+        <helpers>
+            <tc_jquery>
+                <class>TC_Jquery_Helper</class>
+            </tc_jquery>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <tc_jquery>
+                    <file>tc_jquery.xml</file>
+                </tc_jquery>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <tc_jquery>
+            <general>
+                <jqueryEnabled>0</jqueryEnabled>
+                <lazyloadEnabled>0</lazyloadEnabled>
+            </general>
+        </tc_jquery>
+    </default>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <tc_jquery>
+                                            <title>TC Jquery</title>
+                                        </tc_jquery>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

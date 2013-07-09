@@ -1,0 +1,11 @@
+/**
+ * @author     TwinCreations Team <jason@twincreations.co.uk>
+ * @copyright  Copyright (c) 2013 TwinCreations <http://twincreations.co.uk/>
+ *
+ */
+
+.catalog-category-view .page .col-main .category-products .products-grid li a.product-image {
+    background-image: url('/skin/frontend/base/default/tc_jquery/images/lazyload/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
