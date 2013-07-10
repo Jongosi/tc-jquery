@@ -1,4 +1,4 @@
-TC_Jquery
+TC Jquery
 =========
 
 Magento module to enable the jQuery library for Magento stores. Tested for Magento CE 1.7.0.2.
@@ -6,7 +6,7 @@ Magento module to enable the jQuery library for Magento stores. Tested for Magen
 Installation
 ============
 
-1. Copy folder contents into Magento (on OSX, I recommned the ditto terminal command).
+1. Copy folder contents into Magento (on OSX, I recommend the ditto terminal command).
 2. Flush cache at Admin > System > Cache Management.
 3. Logout and login again.
 4. New menu items appear at Admin > System > Configuration, under heading TC.
